@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container border">
+	<h1 class="mb-5">{% block title %}Nuevo Todo{% endblock %}</h1>
+	<form method="post">
+		<div class="form-goup">
+			<label for="description">Description</label>
+			<input name="description" id="description" class="form-control bg-dark text-light" required />
+		</div>
+		<input type="submit" value="Guardar" class="btn btn-success w-50" />
+	</form>
+</div>
+{% endblock %}
